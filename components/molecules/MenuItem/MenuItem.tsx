@@ -1,12 +1,15 @@
-import { Text } from "@chakra-ui/react";
+import { Link, Text } from "@chakra-ui/react";
 import React from "react";
 
 type MenuItemProps = {
-  children: string | React.ReactNode;
+  text: string;
+  href: string;
 };
 
-export const MenuItem: React.FC<MenuItemProps> = ({ children }) => (
-  <Text color="#666666" fontSize="18px">
-    {children}
+export const MenuItem: React.FC<MenuItemProps> = ({ text, href }) => (
+  <Text color="whiteAlpha.900" fontSize="18px">
+    <Link href={href}>
+      <a>{text}</a>
+    </Link>
   </Text>
 );
