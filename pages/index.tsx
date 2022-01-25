@@ -4,6 +4,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Hero } from "../components/molecules/Hero/Hero";
 import { TopBar } from "../components/organisms/TopBar/TopBar";
+import { LandingBody } from "../components/molecules/LandingBody/LandingBody";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <Flex>
         <Hero />
       </Flex>
+      <LandingBody />
     </div>
   );
 };
