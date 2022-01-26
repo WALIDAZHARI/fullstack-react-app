@@ -4,7 +4,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Hero } from "../components/molecules/Hero/Hero";
 import { TopBar } from "../components/organisms/TopBar/TopBar";
-import { LandingBody } from "../components/molecules/LandingBody/LandingBody";
+import { LandingBody } from "../components/organisms/LandingBody/LandingBody";
+import { LandingFooter } from "../components/organisms/LandingFooter/LandingFooter";
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <Hero />
       </Flex>
       <LandingBody />
+      <LandingFooter />
     </div>
   );
 };

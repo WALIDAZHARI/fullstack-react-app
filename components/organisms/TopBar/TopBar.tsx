@@ -4,30 +4,42 @@ import { MenuItem } from "../../molecules/MenuItem/MenuItem";
 
 export const TopBar = () => {
   return (
-    <Flex w="100%" alignContent="center" flexDirection="row" p="8px 16px">
-      <Text
-        fontSize="36px"
-        fontWeight="bold"
-        lineHeight="42px"
-        color="#1F79BA"
-        flexGrow={1}
+    <Flex
+      w="100%"
+      alignContent="center"
+      flexDirection="row"
+      p="8px 16px"
+      justifyContent="center"
+    >
+      <Flex
+        w={["100%", "100%", "100%", "90ch"]}
+        alignContent="center"
+        flexDirection="row"
       >
-        WalidApp
-      </Text>
-      <HStack spacing="16px" alignContent="center">
-        <MenuItem text="Blog" href="/blog" />
-        <MenuItem text="Product" href="/product" />
-        <MenuItem text="Pricing" href="/pricing" />
-      </HStack>
-      <Flex marginLeft="82px">
-        <Button
-          variant="solid"
-          color="white"
-          colorScheme="blue"
-          background={"blue.500"}
+        <Text
+          fontSize="36px"
+          fontWeight="bold"
+          lineHeight="42px"
+          color="#1F79BA"
+          flexGrow={1}
         >
-          Get Started
-        </Button>
+          WalidApp
+        </Text>
+        <HStack spacing="16px" alignContent="center">
+          <MenuItem text="Blog" href="/blog" />
+          <MenuItem text="Product" href="/product" />
+          <MenuItem text="Pricing" href="/pricing" />
+        </HStack>
+        <Flex marginLeft="82px">
+          <Button
+            variant="solid"
+            color="white"
+            colorScheme="blue"
+            background={"blue.500"}
+          >
+            Get Started
+          </Button>
+        </Flex>
       </Flex>
     </Flex>
   );
